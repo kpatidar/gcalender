@@ -8,6 +8,6 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :google_oauth2, '418349891930-9op56idgot6i6iuglltj25m8ci6abj54.apps.googleusercontent.com', 'sMolB771_H11K-Zn5gqAk7SV', {
     access_type: 'offline',
     scope: 'https://www.googleapis.com/auth/userinfo.email https://www.googleapis.com/auth/calendar',
-    redirect_uri:'https://gcalender.herokuapp.com/oauth2callback'
+    redirect_uri:'https://gcalender.herokuapp.com/auth/google_oauth2/callback'
   }
 end
